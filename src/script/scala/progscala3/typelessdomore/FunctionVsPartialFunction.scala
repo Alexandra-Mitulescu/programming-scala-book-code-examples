@@ -2,12 +2,12 @@
 import progscala3.introscala.shapes.*
 
 val func: Message => String = message => message match
-  case Exit => "Got Exit"
+  //case Exit => "Got Exit"
   case Draw(shape) => s"Got Draw($shape)"
   case Response(str) => s"Got Response($str)"
 
 val pfunc: PartialFunction[Message, String] =
-  case Exit => "Got Exit"
+  //case Exit => "Got Exit"
   case Draw(shape) => s"Got Draw($shape)"
   case Response(str) => s"Got Response($str)"
 
